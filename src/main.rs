@@ -30,7 +30,7 @@ async fn proxy(client: TcpStream) {
 
 #[tokio::main]
 async fn main() {
-    let listener = TcpListener::bind("0.0.0.0:8888").await.unwrap();
+    let listener = TcpListener::bind("0.0.0.0:8880").await.unwrap();
 
     loop {
         let (client, _) = listener.accept().await.unwrap();
